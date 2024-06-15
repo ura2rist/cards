@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+<script defer="defer" src="script/main.js"></script><link href="css/style.css" rel="stylesheet"></head>
+<body>
+
+
+<header class="header">
+  <h1 class="title">AniCard</h1>
+</header>
+
+<main class="main">
+  <section class="cards">
+    <div class="wrapper">
+      <form action="" id="filter" class="filter">
+        <h2 class="filter__title">Фильтры</h2>
+        <div class="dropdown">
+          <input type="hidden" class="dropdown__input-hidden" name="type" value="0">
+          <button class="dropdown__select-wrapper" type="button">
+            <span class="dropdown__select" data-default="Тип карты">Тип карты</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 opacity-50" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+          </button>
+          <div class="dropdown__list-wrapper">
+            <ul class="dropdown__list">
+              <li class="dropdown__item" data-item="1">Боевая</li>
+              <li class="dropdown__item" data-item="2">Колекционная</li>
+            </ul>
+          </div>
+        </div>
+        <div class="dropdown">
+          <input type="hidden" class="dropdown__input-hidden" name="universe" value="0">
+          <button class="dropdown__select-wrapper" type="button">
+            <span class="dropdown__select" data-default="Вселенная">Вселенная</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 opacity-50" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+          </button>
+          <div class="dropdown__list-wrapper">
+            <ul class="dropdown__list">
+              <li class="dropdown__item" data-item="1">Наруто</li>
+              <li class="dropdown__item" data-item="2">Клинок рассекающий демонов</li>
+            </ul>
+          </div>
+        </div>
+        <div class="dropdown">
+          <input type="hidden" class="dropdown__input-hidden" name="covers" value="0">
+          <button class="dropdown__select-wrapper" type="button">
+            <span class="dropdown__select" data-default="Обложки">Обложки</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 opacity-50" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+          </button>
+          <div class="dropdown__list-wrapper">
+            <ul class="dropdown__list">
+              <li class="dropdown__item" data-item="1">🟣 Хроматическая</li>
+              <li class="dropdown__item" data-item="2">🟢 Изумрудная</li>
+              <li class="dropdown__item" data-item="3">🔵 Алмазная</li>
+              <li class="dropdown__item" data-item="4">🟡 Золотая</li>
+              <li class="dropdown__item" data-item="5">⚪️ Серебряная</li>
+              <li class="dropdown__item" data-item="6">🟤 Бронзовая</li>
+            </ul>
+          </div>
+        </div>
+        <div class="dropdown">
+          <input type="hidden" class="dropdown__input-hidden" name="rarity" value="0">
+          <button class="dropdown__select-wrapper" type="button">
+            <span class="dropdown__select" data-default="Редкость">Редкость</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 opacity-50" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+          </button>
+          <div class="dropdown__list-wrapper">
+            <ul class="dropdown__list">
+              <li class="dropdown__item" data-item="1">🟣 Мифические</li>
+              <li class="dropdown__item" data-item="2">🟢 Легендарные</li>
+              <li class="dropdown__item" data-item="3">🔵 Эпические</li>
+              <li class="dropdown__item" data-item="4">🟡 Редкие</li>
+              <li class="dropdown__item" data-item="5">⚪️ Обычные</li>
+            </ul>
+          </div>
+        </div>
+        <div class="custom-checkbox filter__top">
+          <input type="checkbox" id="top50" class="custom-checkbox__input">
+          <label for="top50" class="custom-checkbox__label">Топ 50 карт</label>
+        </div>
+        <div>
+          <button type="button" class="btn reset">Сбросить</button>
+        </div>
+        <div>
+          <button class="btn">Применить</button>
+        </div>
+      </form>
+      <div class="cards__list-wrapper">
+        <ul class="cards__list">
+          <li class="cards__item">
+            <img src="image/file_53.51ca57c4.jpg" alt="" class="cards__image">
+          </li>
+          <li class="cards__item">
+            <img src="image/1.24fe4b05.jpg" alt="" class="cards__image">
+          </li>
+          <li class="cards__item">
+            <img src="image/2.fe246b32.jpg" alt="" class="cards__image">
+          </li>
+          <li class="cards__item">
+            <img src="image/3.f1d47ace.jpg" alt="" class="cards__image">
+          </li>
+          <li class="cards__item">
+            <img src="image/file_53.51ca57c4.jpg" alt="" class="cards__image">
+          </li>
+          <li class="cards__item">
+            <video loop autoplay muted class="cards__video">
+              <source src="8882f8e24e7c3eba4612.MP4" type="video/mp4">
+            </video>
+          </li>
+          <li class="cards__item">
+            <img src="image/file_53.51ca57c4.jpg" alt="" class="cards__image">
+          </li>
+          <li class="cards__item">
+            <img src="image/file_53.51ca57c4.jpg" alt="" class="cards__image">
+          </li>
+          <li class="cards__item">
+            <img src="image/file_53.51ca57c4.jpg" alt="" class="cards__image">
+          </li>
+          <li class="cards__item">
+            <img src="image/file_53.51ca57c4.jpg" alt="" class="cards__image">
+          </li>
+          <li class="cards__item">
+            <img src="image/file_53.51ca57c4.jpg" alt="" class="cards__image">
+          </li>
+          <li class="cards__item">
+            <img src="image/file_53.51ca57c4.jpg" alt="" class="cards__image">
+          </li>
+        </ul>
+      </div>
+      <div class="pagination">
+        <button class="pagination__btn">
+          <span>Предыдущий</span>
+        </button>
+        <button class="pagination__btn pagination__page">
+          <span>1</span>
+        </button>
+        <button class="pagination__btn">
+          <span>Следующий</span>
+        </button>
+      </div>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="modal__inner"></div>
+        <h2>Название карты</h2>
+        <p>Карты у вас: 12шт.</p>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

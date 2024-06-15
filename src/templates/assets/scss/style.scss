@@ -1,0 +1,101 @@
+@import "dropdown";
+@import "checkbox";
+@import "modal";
+@import "reset";
+
+body {
+  background-color: hsl(222.2deg 85.79% 4.74%);
+}
+
+.lock {
+  overflow: hidden;
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.btn {
+  width: 100%;
+  cursor: pointer;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 7px;
+  color: hsl(217.2deg 32.38% 18.55%);
+  background-color: hsl(210deg 40% 98%);
+}
+
+.filter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-bottom: 50px;
+
+  &__title {
+    grid-column: 1/3;
+  }
+
+  &__top {
+    grid-column: 1/3;
+  }
+}
+
+.cards {
+  &__list-wrapper {
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 260px));
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: repeat(4, minmax(0, 260px));
+    }
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(3, minmax(0, 260px));
+    }
+    @media screen and (max-width: 425px) {
+      grid-template-columns: repeat(2, minmax(0, 260px));
+    }
+    gap: 20px;
+  }
+
+  &__item {
+    cursor: pointer;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__video {
+    object-fit: cover;
+    aspect-ratio: 16 / 20;
+    width: 100%;
+  }
+}
+
+.pagination {
+  justify-content: center;
+  margin-bottom: 50px;
+  display: flex;
+  gap: 30px;
+
+  &__btn {
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
